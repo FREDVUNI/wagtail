@@ -127,6 +127,87 @@ You might like to start by reviewing the [contributing guidelines](https://docs.
 
 We also welcome translations for Wagtail's interface. Translation work should be submitted through [Transifex](https://explore.transifex.com/torchbox/wagtail/).
 
+**Fork the Repository:**
+
+1. Go to the Wagtail repository on GitHub: https://github.com/wagtail/wagtail.git
+2. Click on the "Fork" button in the top-right corner of the repository page. This will create a copy of the Wagtail repository in your GitHub account.
+
+**Clone the Forked Repository:**
+
+1. Go to your GitHub account, find the forked Wagtail repository, and click on the "Code" button.
+2. Copy the URL of the repository (should look like `https://github.com/your-username/wagtail.git`).
+3. Open a terminal or command prompt on your local machine.
+4. Navigate to the directory where you want to store the project.
+5. Run the following command to clone the repository:
+   ```
+   git clone https://github.com/your-username/wagtail.git
+   ```
+
+**Set Up the Upstream Remote:**
+
+1. Change to the project directory:
+   ```
+   cd wagtail
+   ```
+2. Add the original Wagtail repository as an upstream remote so that you can keep your fork in sync with the main repository:
+   ```
+   git remote add upstream https://github.com/wagtail/wagtail.git
+   ```
+
+**Create a New Branch:**
+
+1. Before making changes, create a new branch to work on your contribution:
+   ```
+   git checkout -b my-contribution
+   ```
+
+**Make Your Changes:**
+
+1. Open the project in your preferred code editor.
+2. Make the necessary changes and improvements.
+
+**Commit Your Changes:**
+
+1. Save your changes and go back to the terminal.
+2. Stage your changes for commit:
+   ```
+   git add .
+   ```
+3. Commit the changes with a descriptive message:
+   ```
+   git commit -m "Added feature XYZ" 
+   ```
+
+**Sync Your Fork:**
+
+1. Before submitting a pull request, it's a good idea to sync your fork with the main repository to ensure you have the latest changes:
+   ```
+   git fetch upstream
+   git checkout main
+   git merge upstream/main
+   ```
+
+**Push Your Changes:**
+
+1. Push your changes to your forked repository on GitHub:
+   ```
+   git push origin my-contribution
+   ```
+
+**Submit a Pull Request:**
+
+1. Go to your forked repository on GitHub: https://github.com/your-username/wagtail.git
+2. Click on the "Pull Requests" tab.
+3. Click on the "New Pull Request" button.
+4. Select the base branch (usually `main`) from the original repository and the compare branch (`my-contribution`) from your fork.
+5. Review the changes and click on the "Create Pull Request" button.
+6. Add a title and description for your pull request, then click on the "Create Pull Request" button to submit it.
+
+**Review and Merge:**
+
+1. Wait for the project maintainers to review your pull request.
+2. They may request changes or approve and merge your contribution.
+
 ### 🔓 License
 
 [BSD](https://github.com/wagtail/wagtail/blob/main/LICENSE) - Free to use and modify for any purpose, including both open and closed-source code.
